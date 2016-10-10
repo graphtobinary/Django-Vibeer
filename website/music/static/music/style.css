@@ -1,0 +1,20 @@
+.navbar{
+  border-radius: 0;
+}
+
+.navbar-brand{
+  font-family: 'Satisfy', cursive;
+}
+
+.card-img-top{
+  width: 242px;
+  height: 200px;
+}
+.navbar-fixed-top {
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.card{ padding: 0 5% 5% 5%; background: #ddd;}
+.card img{ width: 100%;}

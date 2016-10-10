@@ -1,0 +1,63 @@
+{% extends 'music/base.html' %}
+{% block title %}Song details{% endblock %}
+{% block body %}
+  <!--  <img src="{{ album.album_logo }}">
+    <h3>{{ album.album_title }}</h3>
+    <h4>{{ album.artist }}</h4>
+
+
+      {% for song in album.song_set.all %}
+      <input type="radio" id="{{ forloop.counter }}" name="song" value = "{{ song.id }}" >
+      <label for="song{{ forloop.counter }}">
+        {{ song.song_title }}
+        {% if song.is_favorite %}
+        <img src="http://findicons.com/files/icons/767/wp_woothemes_ultimate/16/star.png" />
+        {% endif %}
+      </label><br>
+      {% endfor %} -->
+
+      <div class="container">
+       <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <img class="card-img-top" src="{{ album.album_logo }}" alt="Card image cap" />
+                <div class="card-block">
+                  <h4 class="card-title">{{ album.album_title }}</h4>
+                  <p class="card-text">{{ album.artist }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="listing-inner">
+                <div class="listing-btnsection">
+                  <a href="#" class="btn btn-primary">View All</a>
+                  <a href="#">Add new Songs</a>
+                </div>
+              <div class="table-section">
+                <div class="table-responsive">
+                  <table width="100%" collspacing="0" border="1" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Audio File</th>
+                        <th>Favorite</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                      </tr>
+                    </tbody>
+
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+{% endblock %}
